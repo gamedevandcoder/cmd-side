@@ -1,6 +1,6 @@
     bool = true
     swp = false
-    if (swp == true){
+    if (swp === true){
         console.log("This Is My Portfiolo")
     }
     function stt(){
