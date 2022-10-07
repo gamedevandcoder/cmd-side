@@ -1,7 +1,8 @@
     bool = true
     swp = false
-    if (swp === true){
-        console.log("This Is My Portfiolo")
+    function show(){
+        portfoilo = document.getElementById("portfoilo")
+        portfoilo.style.opacity = 1
     }
     function stt(){
         if (bool == true){
@@ -13,6 +14,7 @@
             bool = false
             speed = 100
             count = 0
+
             let string ='Sudo -u Show My Portfoilo        <br>'+'>'
             newstr = ""
             under ="&nbsp"
@@ -35,6 +37,9 @@
                 if (count == string.length) {
                     bool = false
                     swp = true
+                }
+                if (swp == true){
+                    show()
                 }
             }
         }
