@@ -31,7 +31,21 @@ html {
     color :#73AD21;
     z-index: 10;
 }
+@keyframes shadowing{
+    0%{
+        text-shadow: 0px 0px 5px #00ff22;
+    }
+    15%{
+        text-shadow: 0px 0px 5px rgba(8, 49, 3, 0.651);
+    }
+    100%{
+    text-shadow: 0px 0px 5px #00ff22;
+    
+    }
+
+}
 #borderwindow{
+    box-shadow: 0px 0px 20px #568a0d98;
     width:70vmin;
     border-color: gray;
     border: 5px solid #73AD21;
@@ -43,4 +57,7 @@ html {
     background: rgb(0, 0, 0);
     text-shadow: 0px 0px 10px #00ff22;
     z-index: 10;
+    animation-name : shadowing;
+    animation-duration: 4s ;
+    animation-iteration-count: infinite;
 }
