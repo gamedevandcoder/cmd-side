@@ -1,25 +1,40 @@
-function start() {
-    speed = 199
-    count = 0
-    let string ="hello every one im gona show how to create this"
-    newstr = ""
     bool = true
-    tm = setInterval(addletter, speed)
-    function addletter(){
-        under ="_"
-        if (count%2 == 1) {
-            under=" "
-        }
-        else {
-            under = "_"
-        }
+    swp = false
+    if (swp == true){
+        console.log("This Is My Portfiolo")
+    }
+    function stt(){
         if (bool == true){
-            count += 1
-            newstr = string.substring(0 , count)
-            document.getElementById("startt").innerHTML = newstr+under
-        }
-        if (count == string.length) {
-            bool = false
+            start()
         }
     }
-}
+    num = 0
+    function start() {
+            bool = false
+            speed = 100
+            count = 0
+            let string ='Sudo -u Show My Portfoilo        <br>'+'>'
+            newstr = ""
+            under ="&nbsp"
+            tm = setInterval(addletter, 100)
+            tt = setInterval(addnum, 200)
+            function addnum(){
+                num+=1
+            }
+            function addletter(){
+                under ="_"
+                if (num %2 == 1) {
+                    under="&nbsp"
+                }
+                else {
+                    under = "_"
+                }
+                count += 1
+                newstr = string.substring(0 , count)
+                document.getElementById("startt").innerHTML =">"+"&nbsp"+newstr+"&nbsp"+under+"&nbsp"
+                if (count == string.length) {
+                    bool = false
+                    swp = true
+                }
+            }
+        }
