@@ -48,10 +48,29 @@ html {
     box-shadow: 0px 0px 20px #568a0d98;
     width:70vmin;
     border-color: gray;
-    border: 5px solid #73AD21;
+    border: 1px solid #73AD21;
     border-spacing: 10px;
-    margin: 20px auto;
+    margin: 40px auto;
     height: 30vmin;
+    color :#73AD21;
+    line-height: 7vmin;
+    background: rgb(0, 0, 0);
+    text-shadow: 0px 0px 10px #00ff22;
+    z-index: 10;
+    animation-name : shadowing;
+    animation-duration: 4s ;
+    animation-iteration-count: infinite;
+}
+#portfoilo{
+    opacity: 0;
+    box-shadow: 0px 0px 20px #568a0d98;
+    width: 70vmin;
+    border-color: gray;
+    border: 1px solid #73AD21;
+    border-spacing: 10px;
+    margin: 40px auto;
+    height: 50vmin;
+    transition: 1s;
     color :#73AD21;
     line-height: 7vmin;
     background: rgb(0, 0, 0);
