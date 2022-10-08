@@ -39,7 +39,7 @@ html {
         text-shadow: 0px 0px 5px rgba(8, 49, 3, 0.651);
     }
     100%{
-    text-shadow: 0px 0px 5px #00ff22;
+        text-shadow: 0px 0px 5px #00ff22;
     
     }
 
@@ -61,22 +61,49 @@ html {
     animation-duration: 4s ;
     animation-iteration-count: infinite;
 }
+#hide{
+    opacity:0;
+    transition: 1.5s;
+}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
 #portfoilo{
-    opacity: 0;
+    height:35vmin;
+    width: auto;
+    align-content: center;
+    transition: 500ms;
+    font-size: 3vmin;
+    position: relative;
+    top: -3vmin;
     box-shadow: 0px 0px 20px #568a0d98;
     width: 70vmin;
     border-color: gray;
     border: 1px solid #73AD21;
-    border-spacing: 10px;
-    margin: 40px auto;
     height: 50vmin;
     transition: 1s;
     color :#73AD21;
-    line-height: 7vmin;
-    background: rgb(0, 0, 0);
-    text-shadow: 0px 0px 10px #00ff22;
+    line-height: 1vmin;
     z-index: 10;
-    animation-name : shadowing;
-    animation-duration: 4s ;
-    animation-iteration-count: infinite;
+    align-content: center;
+    text-shadow: 0px 0px 5px #00ff22;
+    background: black;
+    user-select: none;
+}
+h3{
+    color: gainsboro;
+}
+#portfoilo:hover{
+    opacity: 0;
+}
+#img01{
+    font-size: 5vmin;
+    height: 50vmin;
+    width: 70vmin;
+    position:relative;
+    top:-13.5vmin;
+    margin-top: -40vmin;
+    border: 1px solid #73AD21;
+    transition: 1s;
 }
