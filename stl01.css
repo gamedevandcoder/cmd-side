@@ -3,7 +3,7 @@
 body {
     font-family: 'Exo 2', sans-serif;
     color: aliceblue;
-    height: 150%;
+    height:122%;
     position: absolute;
     top: 0%;
     left: 0%;
@@ -13,13 +13,12 @@ body {
     display:inline;
 }
 html {
-    height: 100%;
     width:100%;
     background: black;
     overflow-x: hidden;
 }
 #mouseon{
-    width:60vmin;
+    width:65vmin;
     border-color: gray;
     border-spacing: 10px;
     font-size: 2.3vmin;
@@ -30,6 +29,8 @@ html {
     text-align-last: left;
     color :#73AD21;
     z-index: 10;
+    cursor:grab;
+    user-select: none;
 }
 @keyframes shadowing{
     0%{
@@ -87,9 +88,8 @@ a:active { text-decoration: none; }
     line-height: 1vmin;
     z-index: 10;
     align-content: center;
-    text-shadow: 0px 0px 5px #00ff22;
-    background: black;
-    user-select: none;
+    text-shadow: white;
+    background-color: rgba(0, 0, 0, 0.63);
 }
 h3{
     color: gainsboro;
@@ -106,4 +106,115 @@ h3{
     margin-top: -40vmin;
     border: 1px solid #73AD21;
     transition: 1s;
+}
+.container {
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:100%;
+    height:5vmin;
+  }
+  
+  .container span {
+    display: block; 
+    
+  }
+  
+  .text1 {
+    color: rgb(7, 131, 7);
+    font-size: 3vmin;
+    font-weight: 700;
+    position: relative;
+    bottom: -0.8vmin;
+    font-family: 'Anonymous Pro', monospace;
+    
+  }
+  .text1::after{
+    content: "H";
+    animation-name: text;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+  }
+  @keyframes text {
+    0% {
+    content: "H_";
+    }
+    4% {
+    content: "Ho_";
+    }
+    8% {
+    content: "Hou_";
+    }
+    12% {
+    content: "Houss_";
+    }
+    16% {
+    content: "Housse_";
+    }
+    20% {
+    content: "Houssem_";
+    }
+    24% {
+    content: "Houssem C_";
+    }
+    28% {
+    content: "Houssem Ch_";
+    }
+    32% {
+    content: "Houssem Che_";
+    }
+    36% {
+    content: "Houssem Chel_";
+    }
+    40% {
+    content: "Houssem Cheli_";
+    }
+    44% {
+    content: "Houssem Chelih_";
+    }
+    48% {
+    content: "Houssem Chelihi_";
+    }
+    52% {
+    content: "Houssem Chelih_";
+    }
+    56% {
+    content: "Houssem Cheli_";
+    }
+    60% {
+    content: "Houssem Chel_";
+    }
+    64% {
+    content: "Houssem Che_";
+    }
+    68% {
+    content: "Houssem Ch_";
+    }
+    72% {
+    content: "Houssem C_";
+    }
+    76% {
+    content: "Houssem_";
+    }
+    80% {
+    content: "Housse_";
+    }
+    84% {
+    content: "Houss_";
+    }
+    88% {
+    content: "Hous_";
+    }
+    92% {
+    content: "Hou_";
+    }
+    96% {
+    content: "Ho_";
+    }
+    100% {
+    content: "H_";
+    }
 }
