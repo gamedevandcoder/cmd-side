@@ -1,25 +1,37 @@
     bool = true
     swp = false
     bl2 = false
+    hover = false
+    let string ='Sudo -u Show My Portfoilo        <br>'+'>'
     it = setInterval(changeimg, 1500)
     function show(){
         bl2=true
+
         
     }
+    function curout(){
+        hover = false
+        string ='Sudo -u Show My Portfoilo        <br>'+'>'
+        document.getElementById("u1").style.cursor = "default"
+    }
+
     function cur(){
         if (swp==false){
-        document.getElementById("u1").style.cursor = "default"
+        pass
         }
         else {
+            hover = true
             document.getElementById("u1").style.cursor = "pointer"
+            string ='Sudo -u Show My Portfoilo        <br>'+'>'+'&nbspDB Video Downloader'
+
         }
     }
     function changeimg() {
         if (num %2 == 1) {
-            document.getElementById("img01").src = "02.png";
+            document.getElementById("img01").src = "https://raw.githubusercontent.com/gamedevandcoder/cmd-side/main/01.PNG";
         }
         else {
-            document.getElementById("img01").src = "01.png";
+            document.getElementById("img01").src = "https://raw.githubusercontent.com/gamedevandcoder/cmd-side/main/02.PNG";
         }
     }
     function stt(){
@@ -30,8 +42,10 @@
     }
     function dbvd() {
         if (swp==true){
+            if (hover==true){
         window.open("https://github.com/gamedevandcoder/db-video-downloader", '_blank').focus();
-      }
+            }
+        }
     }
     num = 0
     function start() {
@@ -39,7 +53,7 @@
             
             speed = 100
             count = 0
-            let string ='Sudo -u Show My Portfoilo        <br>'+'>'
+            
             newstr = ""
             under ="&nbsp"
             tm = setInterval(addletter, 100)
