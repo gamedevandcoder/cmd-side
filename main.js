@@ -16,10 +16,10 @@
     }
     function changeimg() {
         if (num %2 == 1) {
-            document.getElementById("img01").src = "02.png";
+            document.getElementById("img01").src = "https://raw.githubusercontent.com/gamedevandcoder/cmd-side/main/01.PNG";
         }
         else {
-            document.getElementById("img01").src = "01.png";
+            document.getElementById("img01").src = "https://raw.githubusercontent.com/gamedevandcoder/cmd-side/main/02.PNG";
         }
     }
     function stt(){
